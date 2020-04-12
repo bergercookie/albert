@@ -34,5 +34,5 @@ COPY . /srv/albert/src/
 WORKDIR /srv/albert/build/
 RUN true \
  && cmake /srv/albert/src/ -DCMAKE_BUILD_TYPE=Debug \
- && make \
+ && make -j$(expr $(nproc) -1) \
  && make install
