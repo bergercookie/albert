@@ -66,7 +66,7 @@ public:
     /**
      * @brief addMatch
      * Use the addMatches if you have a lot of items to add.
-     * @param item The to add to the results
+     * @param item The item to add to the results
      * @param score The relevance factor (UINT_MAX -> 1)
      * @see addMatches
      */
