@@ -7,3 +7,6 @@ design
 *.qmlc
 *.jsc
 
+tags
+compile_commands.json
+.projections.json

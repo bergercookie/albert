@@ -236,7 +236,7 @@ int main(int argc, char **argv) {
 
 
         QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-        if ( !db.isValid() )
+        if (!db.isValid())
             qFatal("No sqlite available");
         if (!db.driver()->hasFeature(QSqlDriver::Transactions))
             qFatal("QSqlDriver::Transactions not available.");
